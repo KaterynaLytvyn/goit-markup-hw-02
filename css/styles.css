@@ -23,6 +23,11 @@ body {
   text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 /* hiding titles*/
 .visually-hidden {
   position: absolute;
@@ -93,6 +98,7 @@ body {
 
 .btn {
     cursor:pointer;
+    font-family: inherit;
 }
 
 /* --------------header---------------*/
@@ -105,19 +111,22 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-menu {
   color: var(--text-color-dark);
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
+.header-contacts {
+  color: var(--text-color-light)
 }
 
-.header-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.header-contacts-email {
+  color: var(--text-color-light);
+}
+
+.menu-link.current {
+  color: var(--accent-color);
 }
 
 /*----------------- hero ------------*/
@@ -150,7 +159,6 @@ body {
 }
 
 .specificity-item-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -176,7 +184,6 @@ body {
 }
 
 .team-item-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -193,14 +200,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-address-text {
   color: #ffffff;
 }
 
 .footer-contact {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
